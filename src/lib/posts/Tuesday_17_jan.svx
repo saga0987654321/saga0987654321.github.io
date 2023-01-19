@@ -1,0 +1,45 @@
+---
+title: Tuesday.17.jan
+date: "2023-01-17"
+---
+
+Jag har tagit bytt bild på kakan till en annan kaka. Jag har 
+även bytt bild på the upgrades. På reset knappen så har jag bytt 
+färg till ljusblå. 
+
+```css
+.reset{
+  border: 4px solid rgb(45, 51, 101);
+  background-color: rgb(69, 170, 232);
+}
+```
+Jag har gjort hovers så att när man lägger musen på en knapp så
+ser det ut som att knappen "rör sig" eller att den blir mindre. 
+Jag har gjort hovers på clicker, upgrades, reset och texten till
+dessa knappar.
+
+```css
+ .reset:hover{
+  border:5px solid rgb(255, 255, 255);
+  color: rgb(221, 223, 237);
+ }
+```
+```css
+.upgrade:hover{
+  border:5px solid rgb(255, 255, 255);
+  color: rgb(221, 223, 237);
+  }
+```
+```css
+ .clicker:hover{
+      border: 5px solid rgb(255, 255, 255);
+      color: rgb(221, 223, 237);
+    }
+```
+Jag har gjort så att priset dubblas när man köper en dubbler eller en worker.
+
+```css
+{#each upgrades as upgrade,i}
+upgrades[i].cost=upgrades[i].cost*2
+```
+

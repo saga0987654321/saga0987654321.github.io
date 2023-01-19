@@ -1,0 +1,11 @@
+---
+title: Thursday.19.jan
+date: "2023-01-19"
+---
+Jag tycker det är svårt att se hur många clicks man har när eftersom man ser inte alla siffror på kakan. Därför skrev jag ut antalet clicks på ett annat ställe på hemsidan för att kunna se exakt hur många clicks man har. 
+
+```ccs
+<header>Clicks: {clicks}</header>
+ ```
+När man klickade på dubbler så förändrades inte PPC. Det berodde på att jag hade glömt att skriva in att muliplier var 2 och inte 1. 
+

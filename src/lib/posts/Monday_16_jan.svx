@@ -1,0 +1,30 @@
+---
+title: Monday.16.jan
+date: "2023-01-16"
+---
+
+Idag har jag gjort klart min reset knapp så att den fungerar. 
+När man trycker på reset knappen så ställs allting om i spelet. 
+Spelet startar om. Problemet med knappen var att alla workers i listan 
+inte startades om, utan bara en. 
+
+```css
+<button class="reset"   on:click={() => {
+  clicks = 0;
+  multiplier = 1;
+  workers = [];
+  w = 0;
+  worker_multiplier = 1;
+  console.log("reset")
+  intervalId.forEach(id => {
+    clearInterval(id)
+    
+  });
+
+```
+
+Jag har också gjort så att det står hur många workers man använder.
+
+```css
+        <span>Workers: {workers.length}</span>
+```
